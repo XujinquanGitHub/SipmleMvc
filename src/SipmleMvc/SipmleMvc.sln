@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SipmleMvc", "SipmleMvc\SipmleMvc.csproj", "{35678654-6597-490E-A60D-0C4FDBD79174}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SipmleMvc.Routing", "SipmleMvc.Routing\SipmleMvc.Routing.csproj", "{C513440E-B6D2-4AF5-909D-0FD7DBC1C0B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SipmleMvcDemo", "SipmleMvcDemo\SipmleMvcDemo.csproj", "{5A7F3EA9-9F48-4036-B1C4-6C5478B2FC48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35678654-6597-490E-A60D-0C4FDBD79174}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35678654-6597-490E-A60D-0C4FDBD79174}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35678654-6597-490E-A60D-0C4FDBD79174}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35678654-6597-490E-A60D-0C4FDBD79174}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C513440E-B6D2-4AF5-909D-0FD7DBC1C0B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C513440E-B6D2-4AF5-909D-0FD7DBC1C0B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C513440E-B6D2-4AF5-909D-0FD7DBC1C0B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C513440E-B6D2-4AF5-909D-0FD7DBC1C0B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A7F3EA9-9F48-4036-B1C4-6C5478B2FC48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A7F3EA9-9F48-4036-B1C4-6C5478B2FC48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A7F3EA9-9F48-4036-B1C4-6C5478B2FC48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A7F3EA9-9F48-4036-B1C4-6C5478B2FC48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
