@@ -1,10 +1,11 @@
 ﻿namespace SipmleMvc
 {
-    public class JsonResult : ActionResult
+    public class ViewResult : ActionResult
     {
         public override void ExecuteResult(ControllerContext context)
         {
 
         }
     }
+
 }

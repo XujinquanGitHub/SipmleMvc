@@ -1,6 +1,6 @@
 ﻿namespace SipmleMvc
 {
-    public abstract class ViewResult : ActionResult
+    public abstract class ActionResult
     {
         public abstract void ExecuteResult(ControllerContext context);
     }
