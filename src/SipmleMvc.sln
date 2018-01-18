@@ -1,13 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.12
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SipmleMvc", "SipmleMvc\SipmleMvc.csproj", "{35678654-6597-490E-A60D-0C4FDBD79174}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SipmleMvc.Routing", "SipmleMvc.Routing\SipmleMvc.Routing.csproj", "{C513440E-B6D2-4AF5-909D-0FD7DBC1C0B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SipmleMvcDemo", "SipmleMvcDemo\SipmleMvcDemo.csproj", "{5A7F3EA9-9F48-4036-B1C4-6C5478B2FC48}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SipmleMvcDemo", "SipmleMvcDemo\SipmleMvcDemo.csproj", "{F2BD50CC-EFCC-493A-94D0-6B0909153347}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{3C2EB0A4-8527-4837-862B-5ECDD98FD870}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{29FC9896-3397-4301-823D-C2101239CD71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SipmleMvcTests", "SipmleMvcTests\SipmleMvcTests.csproj", "{8100DFF8-AD9F-4FD6-917B-16764C403BEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SipmleMvc.RoutingTests", "SipmleMvc.RoutingTests\SipmleMvc.RoutingTests.csproj", "{98434A8E-84B2-43DD-BBB2-6CE3A97633FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,12 +31,29 @@ Global
 		{C513440E-B6D2-4AF5-909D-0FD7DBC1C0B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C513440E-B6D2-4AF5-909D-0FD7DBC1C0B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C513440E-B6D2-4AF5-909D-0FD7DBC1C0B7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5A7F3EA9-9F48-4036-B1C4-6C5478B2FC48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5A7F3EA9-9F48-4036-B1C4-6C5478B2FC48}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5A7F3EA9-9F48-4036-B1C4-6C5478B2FC48}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5A7F3EA9-9F48-4036-B1C4-6C5478B2FC48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2BD50CC-EFCC-493A-94D0-6B0909153347}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2BD50CC-EFCC-493A-94D0-6B0909153347}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2BD50CC-EFCC-493A-94D0-6B0909153347}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2BD50CC-EFCC-493A-94D0-6B0909153347}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8100DFF8-AD9F-4FD6-917B-16764C403BEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8100DFF8-AD9F-4FD6-917B-16764C403BEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8100DFF8-AD9F-4FD6-917B-16764C403BEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8100DFF8-AD9F-4FD6-917B-16764C403BEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98434A8E-84B2-43DD-BBB2-6CE3A97633FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98434A8E-84B2-43DD-BBB2-6CE3A97633FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98434A8E-84B2-43DD-BBB2-6CE3A97633FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98434A8E-84B2-43DD-BBB2-6CE3A97633FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{35678654-6597-490E-A60D-0C4FDBD79174} = {3C2EB0A4-8527-4837-862B-5ECDD98FD870}
+		{C513440E-B6D2-4AF5-909D-0FD7DBC1C0B7} = {3C2EB0A4-8527-4837-862B-5ECDD98FD870}
+		{8100DFF8-AD9F-4FD6-917B-16764C403BEB} = {29FC9896-3397-4301-823D-C2101239CD71}
+		{98434A8E-84B2-43DD-BBB2-6CE3A97633FD} = {29FC9896-3397-4301-823D-C2101239CD71}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB595D7F-E823-4FAF-AA75-77C4615D37C2}
 	EndGlobalSection
 EndGlobal

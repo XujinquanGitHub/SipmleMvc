@@ -9,6 +9,7 @@ namespace SipmleMvc.Routing
 {
     public class UrlRoutingModule : IHttpModule
     {
+        public HttpContext CurrentHttpContent { get; set; }
         public void Init(HttpApplication context)
         {
             context.BeginRequest += Context_BeginRequest;
@@ -16,11 +17,12 @@ namespace SipmleMvc.Routing
 
         private void Context_BeginRequest(object sender, EventArgs e)
         {
-            HttpContext currentContext = sender as HttpContext;
-            if (currentContext != null)
+            HttpApplication app = (HttpApplication)sender;
+            if (app != null)
             {
-                currentContext.Response.Write("UrlRoutingModule");
-                currentContext.Response.End();
+                CurrentHttpContent = app.Context;
+                CurrentHttpContent.Response.Write("UrlRoutingModule");
+                CurrentHttpContent.Response.End();
             }
         }
 
