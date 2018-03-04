@@ -41,6 +41,8 @@
     <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MvcHandler.cs" />
+    <Compile Include="MvcRouteHandler.cs" />
     <Compile Include="Results\ActionResult.cs" />
     <Compile Include="ControllerBase.cs" />
     <Compile Include="ControllerContext.cs" />
