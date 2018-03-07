@@ -23,7 +23,8 @@ namespace SipmleMvc
 
         public void ProcessRequest(HttpContext context)
         {
-            context.Response.Write("Success");
+
+            context.Response.Write($"controller:{this.RouteData.RouteValues["controller"]},action:{this.RouteData.RouteValues["action"]}");
             context.Response.End();
         }
     }

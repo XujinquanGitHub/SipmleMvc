@@ -8,6 +8,10 @@ namespace SipmleMvc.Routing
 {
     public class RouteData
     {
+        public RouteData()
+        {
+            RouteValues = new Dictionary<string, object>();
+        }
         public IRouteHandler RouteHandler { get; set; }
 
         public Dictionary<string, object> RouteValues { get; set; }

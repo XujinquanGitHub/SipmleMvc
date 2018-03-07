@@ -29,8 +29,26 @@ namespace SipmleMvc.Routing
 
         public override RouteData GetRouteData(HttpContext context)
         {
+            var routeData = new RouteData() { RouteHandler = this.RouteHandler };
             var url = context.Request.Url.AbsolutePath;
-            return new RouteData() { RouteHandler = this.RouteHandler };
+            foreach (var item in this.DefaultPath)
+            {
+                routeData.RouteValues.Add(item.Key, item.Value);
+            }
+            if (!string.IsNullOrEmpty(url))
+            {
+                var routeValueData = url.Split('/');
+                routeValueData = routeValueData.Skip(1).ToArray();
+                var routePath = this.Url.Split("{}/".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
+                for (int index = 0; index < routeValueData.Length; index++)
+                {
+                    if (!string.IsNullOrEmpty(routeValueData[index]))
+                    {
+                        routeData.RouteValues[routePath[index]] = routeValueData[index];
+                    }
+                }
+            }
+            return routeData;
         }
     }
 }
