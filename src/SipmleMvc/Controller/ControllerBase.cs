@@ -1,13 +1,16 @@
 ﻿using System;
 using System.Web;
+using SipmleMvc.Routing;
 
-namespace SipmleMvc
+namespace SipmleMvc.Controller
 {
     public class ControllerBase : IController
     {
-        public void Execute(HttpContext context)
+
+        public void Execute(RouteData routeData)
         {
-            throw new NotImplementedException();
+            HttpContext.Current.Response.Write($"Execute : controller:{routeData.RouteValues["controller"]},action:{routeData.RouteValues["action"]}");
+            HttpContext.Current.Response.End();
         }
 
         public ViewResult View()

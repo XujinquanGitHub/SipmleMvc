@@ -41,12 +41,14 @@
     <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControllerFactory\DefualtControllerFactory.cs" />
+    <Compile Include="ControllerFactory\IControllerFactory.cs" />
     <Compile Include="MvcHandler.cs" />
     <Compile Include="MvcRouteHandler.cs" />
     <Compile Include="Results\ActionResult.cs" />
-    <Compile Include="ControllerBase.cs" />
-    <Compile Include="ControllerContext.cs" />
-    <Compile Include="IController.cs" />
+    <Compile Include="Controller\ControllerBase.cs" />
+    <Compile Include="Controller\ControllerContext.cs" />
+    <Compile Include="Controller\IController.cs" />
     <Compile Include="Results\JsonResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Results\ViewResult.cs" />

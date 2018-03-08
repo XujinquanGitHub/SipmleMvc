@@ -16,6 +16,8 @@ namespace SipmleMvcDemo
             var Default = new Dictionary<string, object>();
             Default.Add("controller", "Home");
             Default.Add("action", "Index");
+            Default.Add("namespaces", "SipmleMvcDemo.Controllers");
+            Default.Add("assembly", "SipmleMvcDemo");
 
             RouteTable.Routes.Add("Default", new Route("/{controller}/{action}", Default, new SipmleMvc.MvcRouteHandler()));
         }

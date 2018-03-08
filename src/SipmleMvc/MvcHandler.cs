@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web;
+using SipmleMvc.Controller;
+using SipmleMvc.ControllerFactory;
 using SipmleMvc.Routing;
 
 namespace SipmleMvc
@@ -23,9 +25,10 @@ namespace SipmleMvc
 
         public void ProcessRequest(HttpContext context)
         {
-
-            context.Response.Write($"controller:{this.RouteData.RouteValues["controller"]},action:{this.RouteData.RouteValues["action"]}");
-            context.Response.End();
+            IControllerFactory controllerFactory = new DefualtControllerFactory();
+            IController controller = controllerFactory.CreateController(this.RouteData, RouteData.RouteValues["controller"].ToString());
+            controller.Execute(RouteData);
+            
         }
     }
 }

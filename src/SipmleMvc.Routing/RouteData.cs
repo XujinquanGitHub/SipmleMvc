@@ -15,5 +15,10 @@ namespace SipmleMvc.Routing
         public IRouteHandler RouteHandler { get; set; }
 
         public Dictionary<string, object> RouteValues { get; set; }
+
+
+        public Dictionary<string, object> RouteTokens { get; set; }
+
+
     }
 }
